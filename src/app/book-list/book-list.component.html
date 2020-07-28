@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Book Details</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of bookDetails">
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>
+                <button (click)="list()" class="btn btn-primary">Back to Library List</button><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

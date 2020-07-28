@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Library List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>LibraryName</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let library of libraryList | async">
+            <td>{{library.name}}</td>
+            <td>
+                <button (click)="bookDetails(library.libraryId)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
